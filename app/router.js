@@ -12,4 +12,12 @@ Router.map(function () {
   this.route('posts_by_id', {
     path: '/posts/:post_id',
   });
+
+  this.route('a', function () {
+    this.route('b', function () {
+      this.route('c', function () {
+        this.route('d');
+      });
+    });
+  });
 });

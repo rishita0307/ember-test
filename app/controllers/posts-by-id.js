@@ -3,11 +3,10 @@ import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 
 export default class PostsByIdController extends Controller {
-
-  @tracked newComment = ""
+  @tracked newComment = '';
 
   @action
   test() {
-    alert("you typed "+this.newComment)
+    alert('you typed ' + this.newComment);
   }
 }
