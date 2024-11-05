@@ -1,0 +1,13 @@
+{{page-title "Posts"}}
+
+<div class="post_list">
+  <ul>
+    {{#each @model as |post|}}
+      <li>
+        <LinkTo @route="posts_by_id" @model={{post.id}}>
+          {{post.title}}
+        </LinkTo>
+      </li>
+    {{/each}}
+  </ul>
+</div>

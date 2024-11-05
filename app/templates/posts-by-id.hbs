@@ -1,0 +1,14 @@
+{{page-title "PostsById"}}
+<h1>{{@model.post.title}}</h1>
+{{@model.post.body}}
+
+<h2>Comments</h2>
+{{#each @model.comments as |comment|}}
+<div>
+  {{comment.body}}
+</div>
+{{/each}}
+
+<h2>Leave your own</h2>
+<Input @value={{this.newComment}} />
+<button {{on "click" this.test}}>Submit</button>
