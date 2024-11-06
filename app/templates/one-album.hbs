@@ -1,0 +1,6 @@
+{{page-title "OneAlbum"}}
+<h1>{{@model.album.title}}</h1>
+{{#each @model.photos as |photo|}}
+  <img src="{{photo.url}}">
+{{/each}}
+{{@model.photos.length}}

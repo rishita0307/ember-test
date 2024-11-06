@@ -1,0 +1,5 @@
+{{#if this.editMode}}
+  <Input {{on "focusout" this.save}} @value={{this.text}} />
+{{else}}
+<span {{on "click" this.edit}}>{{this.text}}</span>
+{{/if}}

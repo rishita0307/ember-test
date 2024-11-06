@@ -1,0 +1,9 @@
+{{page-title "Albums"}}
+<Click-to-edit></Click-to-edit>
+<h1>Album list:</h1>
+<ul>
+  {{#each @model as |album|}}
+    <li>{{album.title}}</li>
+  {{/each}}
+</ul>
+{{@model.length}}

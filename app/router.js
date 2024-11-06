@@ -20,4 +20,9 @@ Router.map(function () {
       });
     });
   });
+  this.route('albums');
+
+  this.route('one_album', {
+    path: '/albums/:album_id',
+  });
 });
