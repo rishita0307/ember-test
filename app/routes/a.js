@@ -5,9 +5,9 @@ export default class ARoute extends Route {
   @service auth;
 
   async model() {
-    await this.auth.ensureInitialized()
+    await this.auth.ensureInitialized();
     if (!this.auth.user) {
-      throw new Error("NOT LOGGED IN")
+      throw new Error('NOT LOGGED IN');
     }
   }
 }
