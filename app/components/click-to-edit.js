@@ -4,16 +4,15 @@ import { action } from '@ember/object';
 
 export default class ClickToEdit extends Component {
   @tracked editMode = false;
-  @tracked text = "apple"
+  @tracked text = 'apple';
 
   @action
   edit() {
-    this.editMode = true
+    this.editMode = true;
   }
 
   @action
   save() {
-    this.editMode = false
+    this.editMode = false;
   }
-
 }

@@ -1,0 +1,8 @@
+{{page-title "Debgging"}}
+{{outlet}}
+debugging route! {{this.auth.user.displayName}}
+{{#if this.auth.user}}
+  <button {{on "click" this.auth.sign_out}} type="button">auth sign out!</button>
+{{else}}
+<button {{on "click" this.auth.sign_in_with_popup}} type="button">auth sign in!</button>
+{{/if}}
